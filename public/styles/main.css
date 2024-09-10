@@ -1,0 +1,266 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+:root {
+    --secondary: #4f4b4b;
+    --main: rgb(44, 43, 43);
+    --tertiary: #e3e1da;
+
+
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.m-0-auto {
+    margin: 0 auto;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 20vh;
+}
+
+/* Nav Bar */
+
+a {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 97.5%;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 1rem 10rem;
+    background-color: var(--main);
+}
+
+nav div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+span {
+    font-weight: 700;
+}
+
+.links a {
+    font-size: 2rem;
+    padding: 1.5rem 2rem;
+}
+
+.links a:hover {
+    background-color: var(--secondary);
+}
+
+/* Posts */
+
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tertiary);
+    border-radius: 2.5%;
+    height: 25rem;
+    margin: 2rem;
+    padding: 1rem 2rem;
+}
+
+.post div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.post a h2 {
+    color: black;
+}
+
+.post h2 {
+    margin: 0;
+}
+
+.post form {
+    align-self: flex-end;
+    padding: .5rem;
+}
+
+#deleteForm {
+    display: flex;
+    align-items: center;
+    margin-top: -2rem;
+}
+
+#deleteButton {
+    background-color: #d60404;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+}
+
+.edit-div{
+    position: absolute;
+    bottom: 1.5rem; /* Adjust as needed */
+    right: 1.5rem; /* Adjust as needed */
+}
+
+.edit-button {
+    background-color: var(--main);
+    font-weight: 800;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* Post Page */
+
+.postPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.postPage h1 {
+    margin: 2rem auto;
+}
+
+/* Form */
+
+.form {
+    background-color: var(--tertiary);
+    width: 80rem;
+    margin: 4rem auto;
+    border-radius: 2.5%;
+    box-shadow: 0 0 5px #7d7878;
+    padding: 2rem 2rem;
+}
+
+.form h1 {
+    margin: 0;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.inputs {
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    border: 1px solid #d9d1d0;
+    font-size: 1.6rem;
+}
+
+.submit {
+    background-color: var(--main);
+    width: 15rem;
+    height: 4rem;
+    color: #FFFFFF;
+    font-size: 2rem;
+    border-radius: .5rem;
+    border-style: none;
+    margin-top: 3rem;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(44, 43, 43);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 2.5rem;
+}
+
+footer a, footer p{
+    color: white;
+}
+
+.footerNavBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    width: 30rem;
+}
+
+.footerNavBar div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 2rem auto;
+}
+
+hr {
+    width: 97%;
+}

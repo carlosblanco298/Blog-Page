@@ -1,0 +1,26 @@
+<%- include('partials/header.ejs') %>
+
+        <main class="container">
+
+            <div class="form">
+            
+                <h1>Compose</h1>
+
+                <form action="/submitedit" method="post">
+                    <div>
+                        <label for="ptitle">Edit Post</label>
+                        <input type="hidden" name="id"value="<%= id %>">
+                        <input class="inputs" type="text" name="ptitle" name="ptitle" value="<%= title %>">
+                    </div>
+                    <div>
+                        <label for="content">Content</label>
+                        <textarea style="resize: none; height: 8rem;" class="inputs" name="pcontent" id="" placeholder="Your Post Content"><%= content %></textarea>
+                    </div>
+
+                    <input class="submit" type="submit" value="Post">
+                </form>
+
+            </div>
+        </main>
+
+<%- include('partials/footer.ejs') %>

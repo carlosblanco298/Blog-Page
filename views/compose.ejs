@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs') %>
+
+<main class="container">
+
+    <div class="form">
+    
+        <h1>Compose</h1>
+
+        <form action="/compose" method="post">
+            <div>
+                <label for="ptitle">Post Title</label>
+                <input class="inputs" type="text" id="ptitle" name="ptitle">
+            </div>
+            <div>
+                <label for="content">Content</label>
+                <textarea style="resize: none; height: 8rem;" class="inputs" name="pcontent" content="pcontent" placeholder="Your Post Content"></textarea>
+            </div>
+
+            <input class="submit" type="submit" value="Post">
+        </form>
+
+    </div>
+</main>
+
+<%- include('partials/footer.ejs') %>
